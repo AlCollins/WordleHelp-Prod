@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle Helper</title>
+    <link rel="stylesheet" type="text/css" href="wordleHelperStyle.css"/>
+    <link rel="stylesheet" type="text/css" href="modal.css"/>
+    <link rel="stylesheet" type="text/css" href="navbarStyle.css"/>
+</head>
+<body>
+
+<!-- Modal -->
+<div id="onload-modal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header"> 
+        <span id="close" class="close">&times;</span>
+      </div>
+      <div class="modal-body">
+        <div id="instructions" class="modal-title">Instructions</div>
+        <hr class="instructions-hr">
+        <p>Enter your Wordle guesses and click on each square to choose between black, yellow, and green.</p>
+        <p>Hit enter or the generate words button to generate a list of possible Wordle solutions. </p>
+        <hr class="instructions-hr">
+        <!--<hr class="instructions-hr">-->
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+  <!--About Modal-->
+  <div id="about-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span id="close" class="close">&times;</span>
+      </div>
+      <div class="modal-body" id="about-modal-body">
+        <div id="about-body" class="modal-title">About</div>
+        <hr class="instructions-hr">
+        <p>Wordle Helper is designed to give Wordle Players an edge. 
+        It's word generation algorithm considers all aspects of user input 
+        including yellow position check. 
+        </p>
+        <p>Word Set Data Analysis Coming Soon...</p>
+        <hr class="instructions-hr">
+        <p class="small-print" id="version">Wordle Helper version 1.0.0</p>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+
+  <div class="navbar">
+    <div class="dropdown">
+      <button id="main-menu-button" class="dropbtn">
+        <div id="bar1" class="menuBars"></div>
+        <div id="bar2" class="menuBars"></div>
+        <div id="bar3" class="menuBars"></div>
+      </button>
+      <span id="title">Wordle Helper</span>
+      <div id="main-menu-dropdown" class="dropdown-content">
+        <label id="one-col" class="container">Display as one column
+          <input type="checkbox" id="one-col-checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <label id="WordleLink" class="container"><a href="https://www.nytimes.com/games/wordle/index.html" target="_blank">NYTimes Wordle</a>
+          <a href="https://www.nytimes.com/games/wordle/index.html" target="_blank"><img src="NYTimesFavicon.ico.png" id= "wordle-image" width="23" height="23"></a>
+        </label>
+        <label id="About" class="container">About
+          <img id="about-image" src="aboutIcon03.png" width="20" height="20">
+        </label>
+      </div>
+    </div>
+    </div>
+
+
+
+<div id="wordGrid">
+    <div id = "1"></div>
+    <div id = "2"></div>
+    <div id = "3"></div>
+    <div id = "4"></div>
+    <div id = "5"></div>
+    <div id = "6"></div>
+    <div id = "7"></div>
+    <div id = "8"></div>
+    <div id = "9"></div>
+    <div id ="10"></div> 
+    <div id ="11"></div>
+    <div id ="12"></div>
+    <div id ="13"></div>
+    <div id ="14"></div>
+    <div id ="15"></div>
+    <div id ="16"></div>
+    <div id ="17"></div>
+    <div id ="18"></div>
+    <div id ="19"></div>
+    <div id ="20"></div>
+    <div id ="21"></div>
+    <div id ="22"></div>
+    <div id ="23"></div>
+    <div id ="24"></div>
+    <div id ="25"></div>
+    <!--
+    <div id ="26"></div>
+    <div id ="27"></div>
+    <div id ="28"></div>
+    <div id ="29"></div>
+    <div id ="30"></div>
+    -->
+    
+</div>
+<!--<div class="navbar">-->
+<div id="submit">
+    <button type="button" id="submitButton"><img id="submitImage" src="play-button-grey-outline.png" width="48px" height="48px"></button>
+</div>
+<!--<div id="display">
+    <button type="button" id="displayButton"><img src="display.png" width="32px" height="32px"></button>
+</div>-->
+<!--</div>--> 
+<div id="wordCountDiv">
+    <h4 id="wordCount"></h4>
+</div>
+<div id="words"></div>
+
+<script type="text/javascript" src="wordSearch.js"></script>
+<script type="text/javascript" src="wordleHelper.js"></script>
+<script type="text/javascript" src="modal.js"></script>
+<script type="text/javascript" src="navbar.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+/* The Modal (background) */
+#onload-modal {
+    display: block; /* Hidden by default */
+}
+.modal {
+    position: fixed; /* Stay in place */
+    z-index: 99; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+  }
+  #about-modal {
+    display: none;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: none; /*1px solid rgb(96,96,96);*/
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    max-width: 600px;
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: rgb(0,0,0);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    /*padding-top: 4px;*/
+    background-color: rgb(181, 159, 58);
+    color: white;
+  }
+  
+  .modal-body {
+      padding: 6px 40px;
+      padding-bottom: 40px;
+      background-color: rgb(58,58,60);
+      color: white;
+    }
+  
+    #about-modal-body {
+      padding-bottom: 27px;
+    }
+  
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: rgb(83, 141, 79);
+    color: white;
+  }
+  .modal-title {
+    font-size:x-large;
+  }
+  .instructions-hr {
+    height: 1px;
+    background-color: rgb(96,96,96);
+    border: none;
+  }
+  .small-print {
+    font-size: x-small;
+  }
+  
+  #version{
+    text-align: center;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+

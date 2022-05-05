@@ -1,0 +1,66 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+#header{
+    padding: 0px 20px 5px 20px;
+    margin: auto;
+}
+
+#wordGrid{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin: auto;
+    width: 300px;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 12px;
+}
+#wordGrid > div {
+    background-color:black;
+    padding: .5em;
+    text-align: center;
+    vertical-align: center;
+    color: white;
+    border: solid rgb(58, 58, 60);
+}
+
+#submit {
+    padding: 2px 20px 2px 20px;
+    text-align: center;
+    vertical-align: top;
+}
+#submit > button {
+    background-color: black;
+    color: white;
+    border:none;
+}
+#words {
+    /*word-wrap:normal;*/
+    display:flex;
+    flex-wrap: wrap;
+    width: auto;
+    margin:auto;
+    padding-left: 36px;;
+}
+#words > span {
+    /*padding: 5px 10x 5px 10px;*/
+    /*padding-right: 20px;*/
+    width: 100px;
+    /*background-color: yellow;*/
+}
+
+/*
+body::-webkit-scrollbar {
+    background-color: rgb(58, 58, 60);
+    color:yellow;
+}
+body::-webkit-scrollbar-thumb {
+    background-color:red;
+    outline: 1px solid blue;
+}
+*/
+
